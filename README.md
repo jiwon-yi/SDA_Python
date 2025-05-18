@@ -29,7 +29,7 @@ Le modèle est intégré dans une interface simple et interactive développée a
 
 ### ✅ Traitement et sélection des variables
 
-Nous avons appliqué une **préparation minimale et raisonnée** du jeu de données afin de le rendre directement exploitable par notre modèle :
+Nous avons appliqué une préparation minimale et raisonnée du jeu de données afin de le rendre directement exploitable par notre modèle :
 
 - Suppression de la colonne `ID` et d'autres variables non informatives
 - Non-utilisation de `PAY_1` : nous avons préféré utiliser `PAY_0` comme indicateur du mois le plus récent
