@@ -72,10 +72,10 @@ L’interface utilisateur a été développée avec **Streamlit**. Sur la **barr
 ## 📂 Structure du dépôt
 ```
 SDA_Python/
-├── app.py               # Code principal de l'application Streamlit
-├── credit_model.pkl     # Modèle entraîné sauvegardé avec joblib
-├── UCI_Credit_Card.csv  # Jeu de données utilisé pour l'entraînement
-├── requirements.txt     # Fichier de dépendances Python
-└── README.md            # Fichier de documentation du projet
+├── app.py # Code principal de l'application Streamlit
+├── UCI_Credit_Card.csv # Données utilisé 
+├── requirements.txt # Fichier de dépendances Python
+├── README.md # Documentation complète du projet
+└── superPROJ.ipynb # Notebook de modélisation et d'entraînement
 ```
 
