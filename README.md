@@ -72,11 +72,12 @@ L’interface utilisateur a été développée avec **Streamlit**. Sur la **barr
 - La prédiction est affichée avec un message vert (client fiable) ou rouge (client à risque)
 - Une **visualisation circulaire** (pie chart) montre la probabilité de défaut
 
----
 
+---
 ## 🎥 Démonstration vidéo
 
-➡️ Lien Google Drive : [Cliquez ici pour visionner la démonstration](https://drive.google.com/file/d/1Rif2-bcE0ODv066ALckEYCWqqbAxnUv8/view?usp=drive_link)
+➡️ Lien Google Drive : [Cliquez ici pour visionner la démonstration](https://drive.google.com/file/d/1p-LSjBZsc0jo_T5q0y7GCWNg3lEMQ3JZ/view?usp=sharing)
+
 
 
 ---
