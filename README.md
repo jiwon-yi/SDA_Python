@@ -1,5 +1,5 @@
-# SDA_Python
-# 💳 WebApp de Prédiction de Défaut de Crédit
+# 💳 SDA_Python - WebApp de Prédiction de Défaut de Crédit
+
 
 ## 👥 Réalisé par :
 Jordan Pindoh et Jiwon Yi
@@ -64,7 +64,8 @@ L’interface utilisateur a été développée avec **Streamlit**. Sur la **barr
 
 ## 🎥 Démonstration vidéo
 
-➡️ Lien Google Drive : [Insérez ici le lien de votre vidéo de démonstration](https://drive.google.com/...)
+➡️ Lien Google Drive : [Cliquez ici pour visionner la démonstration](https://drive.google.com/file/d/1Rif2-bcE0ODv066ALckEYCWqqbAxnUv8/view?usp=drive_link)
+
 
 ---
 
