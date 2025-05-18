@@ -20,12 +20,24 @@ Le modèle est intégré dans une interface simple et interactive développée a
 - **Nom du fichier** : `UCI_Credit_Card.csv`
 - **Source officielle** : [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
 - **Nombre d’observations** : 30 000 clients
+- **Variable cible** : `default.payment.next.month` (0 = pas de défaut, 1 = défaut)
 - **Variables principales** :
-  - Caractéristiques client : `LIMIT_BAL`, `SEX`, `EDUCATION`, `MARRIAGE`, `AGE`
-  - Historique de paiements : `PAY_0` à `PAY_6`
-  - Montants facturés : `BILL_AMT1` à `BILL_AMT6`
-  - Montants payés : `PAY_AMT1` à `PAY_AMT6`
-  - Cible : `default.payment.next.month`
+  - **Caractéristiques du client** : `LIMIT_BAL`, `SEX`, `EDUCATION`, `MARRIAGE`, `AGE`
+  - **Historique de paiements** : `PAY_0` à `PAY_6`
+  - **Montants facturés** : `BILL_AMT1` à `BILL_AMT6`
+  - **Montants remboursés** : `PAY_AMT1` à `PAY_AMT6`
+
+### ✅ Traitement et sélection des variables
+
+Nous avons appliqué une **préparation minimale et raisonnée** du jeu de données afin de le rendre directement exploitable par notre modèle :
+
+- Suppression de la colonne `ID` et d'autres variables non informatives
+- Non-utilisation de `PAY_1` : nous avons préféré utiliser `PAY_0` comme indicateur du mois le plus récent
+- Sélection de **23 variables explicatives pertinentes**, réparties comme suit :
+  - **Données personnelles** : `LIMIT_BAL`, `SEX`, `EDUCATION`, `MARRIAGE`, `AGE`
+  - **Historique de paiement** : `PAY_0`, `PAY_2`, `PAY_3`, `PAY_4`, `PAY_5`, `PAY_6`
+  - **Montants facturés** : `BILL_AMT1` à `BILL_AMT6`
+  - **Montants remboursés** : `PAY_AMT1` à `PAY_AMT6`
 
 ---
 
@@ -73,7 +85,7 @@ L’interface utilisateur a été développée avec **Streamlit**. Sur la **barr
 ```
 SDA_Python/
 ├── app.py # Code principal de l'application Streamlit
-├── UCI_Credit_Card.csv # Données utilisé 
+├── UCI_Credit_Card.csv # Données utilisé (version nettoyée)
 ├── requirements.txt # Fichier de dépendances Python
 ├── README.md # Documentation complète du projet
 └── superPROJ.ipynb # Notebook de modélisation et d'entraînement
